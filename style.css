@@ -1,0 +1,189 @@
+/* #ff686d */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff686d;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .con #search {
+  width: 0;
+  padding: 0;
+}
+
+#check:checked ~ .con button {
+  border-radius: 5rem;
+  background-color: white;
+}
+
+#check:checked ~ .con button label > span {
+  color: #ff686d;
+}
+
+.con {
+  display: flex;
+  height: 6rem;
+  justify-content: center;
+  background-color: #ff686d;
+  width: 30rem;
+}
+
+.con input,
+.con button {
+  height: 6rem;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 5px;
+}
+
+.con input {
+  width: 24rem;
+  border-radius: 5rem 0 0 5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  transition: all 0.3s linear;
+}
+
+.con button {
+  width: 6rem;
+  border-radius: 0 5rem 5rem 0;
+  background-color: #ff686d;
+  transition: all 0.1s ease;
+  transition-delay: 0.25s;
+  user-select: none;
+}
+
+span {
+  font-size: 3rem !important;
+  padding: 1.5rem;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .con {
+    height: 4rem;
+    width: 25rem;
+  }
+
+  .con input,
+  .con button {
+    height: 4rem;
+  }
+
+  .con input {
+    width: 21rem;
+    border-radius: 50 0 0 50;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .con button {
+    width: 4rem;
+  }
+
+  span {
+    font-size: 2rem !important;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .con {
+    height: 4rem;
+    width: 20rem;
+  }
+
+  .con input,
+  .con button {
+    height: 4rem;
+  }
+
+  .con input {
+    width: 16rem;
+    border-radius: 50 0 0 50;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .con button {
+    width: 4rem;
+  }
+
+  span {
+    font-size: 1.5rem !important;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .con {
+    height: 2rem;
+    width: 10rem;
+  }
+
+  .con input,
+  .con button {
+    height: 2rem;
+  }
+
+  .con input {
+    width: 8rem;
+    border-radius: 50 0 0 50;
+    font-size: 0.8rem;
+    padding: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .con button {
+    width: 2rem;
+  }
+
+  span {
+    font-size: 1rem !important;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .con {
+    height: 2rem;
+    width: 10rem;
+  }
+
+  .con input,
+  .con button {
+    height: 2rem;
+  }
+
+  .con input {
+    width: 8rem;
+    border-radius: 50 0 0 50;
+    font-size: 0.5rem;
+    padding: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .con button {
+    width: 2rem;
+  }
+
+  span {
+    font-size: 0.8rem !important;
+    padding: 0.5rem;
+  }
+}
